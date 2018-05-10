@@ -1,0 +1,244 @@
+@import "responsive.css";
+@import "timeline.css";
+@import "team.css";
+@import "contact-form.css";
+@import "footer.css";
+@import "social-tray.css";
+
+@font-face {
+  font-family: "nordi";
+  src: url("../fonts/nordique-Light.otf") format("opentype");
+}
+@font-face {
+    font-family: "ringbearer";
+    src: url("../fonts/RINGM___.TTF");
+}
+@font-face {
+    font-family: "goodtimes";
+    src: url("../fonts/good times rg.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.thumbnail {
+	display: block;
+	padding: 4px;
+	margin-bottom: 20px;
+	line-height: 1.42857;
+	-webkit-transition: border 0.2s ease-in-out;
+	-o-transition: border 0.2s ease-in-out;
+	transition: border 0.2s ease-in-out;
+}
+
+.thumbnail > img, .thumbnail a > img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+.logo {
+    font-family: "nordi";
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.content {
+    z-index: 1000;
+}
+
+.panel-bg-shadow {
+    -webkit-box-shadow: 0px 0px 43px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 43px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 43px 1px rgba(0,0,0,0.75);
+}
+
+/*Hero*/
+.hero {
+    height: 60vh;
+    width: 100%;
+}
+
+.hero > h1 {
+    font-family: "goodtimes";
+    margin-top: 15%;
+    text-align: center;
+    color: #fff;
+    font-size: 6.2rem;
+}
+
+.hero > #tagline {
+    text-align: center;
+    color: #fff;
+    font-size: 3.2rem;
+    margin-top: -4%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .hero {
+        margin: 50% auto;
+    }
+
+    .hero > #tagline {
+        margin-top: -8%;
+    }
+}
+
+/*About*/
+
+.about {
+    margin-left: -7%;
+    top:0;
+    left:0;
+    margin-top: 30px;
+    width: 113%;
+    background-color: #ffffff;
+    padding: 0.6em;
+}
+
+.about > h1 {
+    font-size: 4.0rem;
+    text-align: center;
+}
+
+.about > p {
+    font-size: 2.8rem;
+    color: #000;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .about {
+        margin-top: -30%;
+    }
+}
+
+/*Timeline*/
+.timeline > ul > h1 {
+    font-size: 4.0rem;
+    text-align: center;
+    color: #000;
+}
+
+.timeline p {
+    margin: -10px 0;
+    font-size: 2.0rem;
+    color: #fff;
+}
+
+/*Team button*/
+.team-button1 {
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1.25rem 2.5rem;
+    display: block;
+    width: auto;
+    background-color: #8F3985;
+    border: 1px solid transparent;
+    color: #ffffff;
+    font-weight: 300;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.team-button1:hover {
+    background-color: rgba(255,255,255,0);
+    color: #fff;
+    border-color: #fff;
+}
+.team-button2 {
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1.25rem 2.5rem;
+    display: block;
+    width: auto;
+    background-color: #8F3985;
+    border: 1px solid transparent;
+    color: #ffffff;
+    font-weight: 300;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.team-button2:hover {
+    background-color: rgba(255,255,255,0);
+    color: #000;
+    border-color: #000;
+}
+
+/* Contact us */
+.contact {
+    margin-left: -7%;
+    top:0;
+    left:0;
+    margin-top: 30px;
+    margin-right: -7%;
+    /*margin-bottom: -8%;*/
+    /*padding: 0px;*/
+    width: 113%;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+.contact h1 {
+    font-size: 4.0rem;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.contact-items {
+    padding: 1em 1em;
+    text-align: center;
+}
+
+.contact-items > span {
+    line-height: 1.4em;
+    font-size: 1.2em;
+}
+
+.social-tray {
+    text-align: center;
+}
+
+.social-tray .social-nav{
+    margin: 0 0 3em 0;
+}
