@@ -7,6 +7,8 @@
 
 @font-face {
   font-family: "nordi";
+  font-weight: bold;
+  font-color: #00;
   src: url("../fonts/nordique-Light.otf") format("opentype");
 }
 @font-face {
@@ -68,7 +70,8 @@
 
 .logo {
     font-family: "nordi";
-    font-size: 3rem;
+    font-size: 4rem;
+    color: #00;
     font-weight: bolder;
 }
 
@@ -165,7 +168,7 @@
     padding: 1.25rem 2.5rem;
     display: block;
     width: auto;
-    background-color: #8F3985;
+    background-color: #20bd54;
     border: 1px solid transparent;
     color: #ffffff;
     font-weight: 300;
@@ -188,7 +191,7 @@
     padding: 1.25rem 2.5rem;
     display: block;
     width: auto;
-    background-color: #8F3985;
+    background-color: #20bd54;
     border: 1px solid transparent;
     color: #ffffff;
     font-weight: 300;

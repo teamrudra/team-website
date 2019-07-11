@@ -17,8 +17,8 @@
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background: #FFF;
-  border: 1px solid #E2E9ED;
+  background: #292c2e;
+  /*border: 1px solid #393c3d;*/
 }
 .at-grid[data-column="1"] .at-column {
   width: 100%;
@@ -86,8 +86,8 @@
 .at-column {
   z-index: 0;
   position: relative;
-  background: #FFF;
-  box-shadow: 0 0 0 1px #E2E9ED;
+  background: #6d7682;
+  box-shadow: 0 0 0 3px #81888f;
   padding: 10px;
   box-sizing: border-box;
   -webkit-transition: box-shadow 0.2s ease, z-index 0s 0.2s ease, -webkit-transform 0.2s ease;
@@ -108,7 +108,7 @@
   -webkit-transition: box-shadow 0.2s ease, z-index 0s 0s ease, -webkit-transform 0.2s ease;
   transition: box-shadow 0.2s ease, z-index 0s 0s ease, -webkit-transform 0.2s ease;
   transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease;
-  transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0s ease, -webkit-transform 0.2s ease;
+  transition: box-shadow 0.2s ease, transbootstrap 4 video autoplayform 0.2s ease, z-index 0s 0s ease, -webkit-transform 0.2s ease;
 }
 .at-column:hover .at-social {
   margin: 16px 0 0;
@@ -154,14 +154,14 @@
   max-width: 100%;
 }
 .at-user__name {
-  color: #313435;
+  color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 3rem;
   font-weight: 500;
   line-height: 3.5rem;
 }
 .at-user__title {
-  color: #6F808A;
+  color: #dff0e4;
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   line-height: 2.375rem;

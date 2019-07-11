@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link href="./css/owl.carousel.css" rel="stylesheet">
         <link href="./css/owl.theme.css" rel="stylesheet">
-
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <script src="./js/modernizr.js" charset="utf-8"></script>
         <link href="https://fonts.googleapis.com/css?family=David+Libre|Hind:400,700" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
@@ -71,7 +71,7 @@
 
             body {
               font: normal 16px/1.5 "Helvetica Neue", sans-serif;
-              background: #456990;
+              background: #292c2e;
               color: #fff;
             }
 
@@ -121,7 +121,13 @@
               position: relative;
               display: inline-block;
               list-style-type: none;
-              width: 160px;
+              /*display: inline-flex;*/
+              /*Change this to add more elements to the timeline */
+              width: 140px;      
+              /*^^^^^^^^^^^ANTARIKSH ADJUST THIS^^^                 */
+
+              /*Adjust the red dots and line length*/
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/              
               height: 3px;
               background: #fff;
             }
@@ -316,7 +322,10 @@
             {
                 font-weight: 400;
             }
-
+            .responsive {
+              width: 100%;
+              height: auto;
+            }
         </style>
 
     </head>
@@ -329,6 +338,7 @@
             /*.cd-auto-hide-header{
                 border-bottom: 2px solid #8F3985;
             }*/
+
         </style>
         <header class="cd-auto-hide-header">
             <div class="logo"><a class="brand" href="index.html">rudra</a></div>
@@ -345,6 +355,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#recruit">Recruitment</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#sponsorship">Sponsorship</a></li>
@@ -354,71 +365,86 @@
             </nav> <!-- .cd-primary-nav -->
         </header> <!-- .cd-auto-hide-header -->
 
-        <div class="container">
+        
 
-          <img src="img/carousel/2k19Team.jpg" height="100%" width="100%" class="main-img">
+          <img src="img/carousel/2k19Team3.png" height="100%" width="100%" class="main-img">
           <div class="centered">
-             <h1 style="font-family: Good Times Rg;" class="team-name">SRM Team Rudra</h1>
+             <h1 style="font-family: Good Times Rg; color:#d0d4d6; filter: brightness(500%); padding-bottom: 100px;" class="team-name">SRM Team Rudra</h1>
           </div>
       </div>
 
         <main class="cd-main-content">
 
-            <section class="about panel-bg-shadow" style="margin-top: 0px;">
-                <h1 id="about" class="heading" style="color: #000;">About Us</h1>
-                <p style="font-family: Raleway; font-size: 23px; color: #8F3985; margin-top: 10px;" class="para">RUDRA is the official team of SRM University taking part in University Rover Challenge since 2013. The annual competition is held at the Mars Desert Research Station (MDRS), Martian Analog Site, near Hanksville, Utah, USA. The team has been successfully operational for the last 4 years and has maintained its consistency in the competition. Our Team consists of 25-30 undergraduate students of every year from various engineering streams, working in different domains.The fun part - R&amp;D, is the soul and essence of Team Rudra. Brainstorming discussions are always welcome for giving birth to new ideas. The core of Team Rudra believes in giving an opportunity to everyone.</p>
-            </section>
-
+            <div class="card" style="background-color: #6d7682">
+                <h1 id="about" style="background-color: #000000" class="card-header text-white">About Us</h1>
+                <p style="font-family: Raleway; font-size: 23px; color: #e4e9f0; margin-top: 10px;" class="para">RUDRA is the official team of <a style="color:#000000" href="http://www.srmuniv.ac.in/">SRM IST</a> taking part in University Rover Challenge organised by <a style="color:#000000" href="https://www.marssociety.org/">Mars Society</a> since 2013. The annual competition is held at the <a style="color:#000000">Mars Desert Research Station (MDRS)</a>, Martian Analog Site, near Hanksville, Utah, USA. The team has been successfully operational for the last 6 years and has maintained its consistency in the competition. Our Team consists of 25-30 undergraduate students of every year from various engineering streams, working in different domains.The fun part - R&amp;D, is the soul and essence of Team <a style="color:#000000">Rudra</a>. Brainstorming discussions are always welcome for giving birth to new ideas.
+                  <div class="blockuote-footer" style="font-style: italic; font-size: 22px; color:#e4e9f0; text-align:center;">
+                      <cite> -The core of Team Rudra believes in giving an opportunity to everyone.</cite>
+                    </div></p>
+            </div>
+            
             <br>
+            <a href="http://urc.marssociety.org/" class="team-button-link"><button id="js-trigger-overlay" class="team-button1" type="button">Click below image to visit URC website</button></a>
+            <div class="item">
+              <a href="http://urc.marssociety.org/" target="_blank"><img href="http://urc.marssociety.org/" src="img/urc.png" style="display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;"></a>
+            </div>
+            <br>
+
             <section class="timeline">
-                <h1 id="achievements" class="heading" style="color: #fff;" align="center">Achievements</h1>
+                <h1 id="achievements" class="heading" style="color: #fff; text-align: center">Achievements</h1>
                 <div class="margin2">
                 </div>
               <ol>
                 <li>
-                  <div class="thumbnail" style="font-size: 15px; border-top-left-radius: 10px; border-bottom-right-radius: 10px; border-top-right-radius: 10px;">
-                    <time style="font-size: 18px;">2013</time>
+                  <div class="thumbnail" style="font-size: 16px; background-color: #6d7682; color: #ffffff; border-top-left-radius: 10px; border-bottom-right-radius: 10px; border-top-right-radius: 10px;">
+                    <time style="font-size: 18px; color:#ffffff">2013</time>
                         <img src="img/rovers/2013.jpg" alt=""><br>
                         Team Rudra achieved 5th world rank and 1st Asia rank.<br><br><br>
                   </div>
                 </li>
                 <li>
-                    <div class="thumbnail" style="font-size: 15px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; border-top-right-radius: 10px;">
-                      <time style="font-size: 18px;">2014</time>
-                          <img src="img/rovers/2014.jpg" alt=""><br>
-                     Team Rudra bagged 5th position in world and 1st position in Asia.<br><br>
-                    </div>
+                    <div class="thumbnail" style="font-size: 16px; background-color: #6d7682; color: #ffffff; border-top-left-radius: 10px; border-bottom-right-radius: 10px; border-top-right-radius: 10px;">
+                    <time style="font-size: 18px; color:#ffffff">2014</time>
+                        <img src="img/rovers/2014.jpg" alt=""><br>
+                        Team Rudra bagged 5th position in world and 1st in Asia.<br><br><br>
+                  </div>
+                </li>
+                Team Rudra achieved 12th world rank and 2nd rank in Asia.
+                <li>
+                   <div class="thumbnail" style="font-size: 16px; background-color: #6d7682; color: #ffffff; border-top-left-radius: 10px; border-bottom-right-radius: 10px; border-top-right-radius: 10px;">
+                    <time style="font-size: 18px; color:#ffffff">2015</time>
+                        <img src="img/rovers/2015.jpg" alt=""><br>
+                        Team Rudra achieved 12th world rank and 2nd rank in Asia.<br><br><br>
+                  </div>
                 </li>
                 <li>
-                    <div class="thumbnail" style="font-size: 15px; border-top-left-radius: 10px; border-bottom-right-radius: 10px; border-top-right-radius: 10px;">
-                      <time style="font-size: 18px;">2015</time>
-                          <img src="img/rovers/2015.jpg" alt=""><br>
-                      Team Rudra achieved 12th world rank and 2nd rank in Asia.<br><br><br>
-                    </div>
-                </li>
-                <li>
-                    <div class="thumbnail" style="font-size: 15px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; border-top-right-radius: 10px;">
-                      <time style="font-size: 18px;">2016</time>
+                    <div class="thumbnail" style="font-size: 16px; background-color: #6d7682; color:#ffffff;border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; border-top-right-radius: 10px;">
+                      <time style="font-size: 18px; color:#ffffff">2016</time>
                           <img src="img/rovers/2016.jpg" alt=""><br>
                       Team Rudra stood at 9th position in world and 1st among the Asian Teams.
                     </div>
                 </li>
                 <li>
-                  <div class="thumbnail" style="font-size: 15px; border-top-left-radius: 10px; border-bottom-right-radius: 10px; border-top-right-radius: 10px;">
-                    <time style="font-size: 18px;">2017</time>
+                  <div class="thumbnail" style="font-size: 16px; background-color: #6d7682; color:#ffffff;border-top-left-radius: 10px; border-bottom-right-radius: 10px; border-top-right-radius: 10px;">
+                    <time style="font-size: 18px; color:#ffffff">2017</time>
                         <img src="img/rovers/2017.jpeg" alt=""><br>
                         Team Rudra stood at 20th position in world and 4th among the Asian Teams.
                   </div>
                 </li>
+
                 <li>
-                  <div class="thumbnail" style="font-size: 15px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; border-top-right-radius: 10px;">
-                    <time style="font-size: 18px;">2019</time>
-                        <img src="img/rovers/2019.jpg" alt=""><br>
-                    Team Rudra stood at 11th position in world and 2nd among the Asian Teams.
-                  </div>
+                  <div class="thumbnail" style="font-size: 16px; background-color: #6d7682; color:#ffffff;border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; border-top-right-radius: 10px; padding-bottom:40px">
+                      <time style="font-size: 18px; color:#ffffff">2019</time>
+                          <img src="img/rovers/2019.jpg" alt=""><br>
+                      Team Rudra stood at 11th position in world and 2nd among the Asian Teams.
+                    </div>
               </li>
               <li></li>
               </ol>
+              
               <!--<div class="arrows">
                 <button class="arrow arrow__prev disabled" disabled>
                   <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_prev.svg" alt="prev timeline arrow">
@@ -443,33 +469,38 @@
               <div class="item"><img src="img/carousel/6.JPG" alt=""></div>
 
             </div>
+            <div class="embed-responsive embed-responsive-21by9">
+            <video class="video-fluid z-depth-1" height="20" width="20" autoplay loop controls muted>
+              <source src="img/videos/urcwrapup.mp4" type="video/mp4"/>
+            </video>
+            </div>
             <br>
-            <a href="gallery.html" class="team-button-link"><button id="js-trigger-overlay" class="team-button1" type="button">View More ?</button></a>
+            <a href="gallery.html" class="team-button-link"><button id="js-trigger-overlay" class="team-button1" type="button">View More</button></a>
 
             <div class="margin4">
             </div>
 
-            <section class="about panel-bg-shadow container" style="padding-left: 50px; padding-right: 50px">
-                <h1 id="partons" class="heading" style="color: #000;">MEET OUR PATRONS</h1>
+            <section class="about panel-bg-shadow container" style="padding-left: 50px; padding-right: 50px; background-color: #616366">
+                <h1 id="partons" class="heading" style="color: #fff;">MEET OUR PATRONS</h1>
                 <div class="row">
-                    <div class="col-4">
-                        <img src="img/director.jpg">
-                        <div class="at-user__name" style="font-size: 22px;">Dr. C. Muthamizhchelvan</div>
-                        <div class="at-user__title" style="font-size: 15px;">DIRECTOR, E&T</div>
+                    <div class="col-sm-4">
+                        <img src="img/director.jpg" class="responsive">
+                        <div class="at-user__name" style="font-size: 22px; padding-top: 20px">Dr. C. Muthamizhchelvan</div>
+                        <div class="at-user__title" style="font-size: 15px; ">DIRECTOR, E&T</div>
                     </div>
-                    <div class="col-4">
-                        <img src="img/rathinam.jpg">
-                        <div class="at-user__name" style="font-size: 22px;">Dr. A. Rathinam</div>
+                    <div class="col-sm-4">
+                        <img src="img/rathinam.jpg" class="responsive">
+                        <div class="at-user__name" style="font-size: 22px; padding-top: 20px">Dr. A. Rathinam</div>
                         <div class="at-user__title" style="font-size: 15px;">TEAM FACULTY ADVISOR</div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-sm-4">
                         <div class="at-user__name" style="font-size: 30px;">Thank you</div><br><br>
-                        <p style="font-family: Raleway; font-size: 20px; color: #8F3985; margin-top: 0px;">
+                        <p style="font-family: Raleway; font-size: 20px; color: #ffffff; margin-top: 0px;">
                             The entire team is highly grateful and thankful to the Director, Engineering & Technology, Dr. C.Muthamizhchelvan, SRM Management and also for the guidance of the faculty Mentor/advisor Dr .A. Rathinam. As these developments and achievements of the team became reality only by the unstinted support of these patrons.
                         </p>
                     </div>
                 </div>
-            </section>
+              </section>
 
             <div class="team-container">
                 <div class="at-section" >
@@ -478,70 +509,63 @@
                 <div class="at-grid" data-column="4">
                     <div class="at-column">
                         <div class="at-user">
-                            <div class="at-user__avatar" style="height: 145px; width: 145px;"><img src="img/teams/team19/Hari.png" /></div>
-                            <div class="at-user__name" style="font-size: 22px;">Hari Krishna</div>
+                            <div class="at-user__avatar" style="height: 120px; width: 120px;"><img src="img/teams/team19/Rahul Aggarwal.jpg" /></div>
+                            <div class="at-user__name" style="font-size: 22px;">Rahul Agarwal</div>
+                            <a class="btn btn-lg btn-social-icon btn-linkedin" style="color:#152f52" href="https://www.linkedin.com/in/rahul-agarwal-209569162/"><i class="fa fa-linkedin fa-lg"></i></a>
+                            <a class="btn btn-lg btn-social-icon btn-facebook" href="https://www.facebook.com/rahul.agarwal.982"><i class="fa fa-facebook fa-lg"></i></a>
+                            <a class="btn btn-lg btn-social-icon btn-instagram" style="color:#912374" href="https://www.instagram.com/rahul_agarwal25/"><i class="fa fa-instagram fa-lg"></i></a>
                             <div class="at-user__title" style="font-size: 15px;">Team Lead</div>
                         </div>
                     </div>
                     <div class="at-column">
                         <div class="at-user">
-                            <div class="at-user__avatar" style="height: 145px; width: 145px;"><img src="img/teams/team19/Maanik.jpg"/></div>
-                            <div class="at-user__name" style="font-size: 22px;">Maanik Narayanan</div>
+                            <div class="at-user__avatar" style="height: 120px; width: 120px;"><img src="img/teams/team18/Renish.JPG" style="border-radius: 50%; height: 100%; width: 100%;"/></div>
+                            <div class="at-user__name" style="font-size: 22px;">Renish Kumar</div>
+                            <a class="btn btn-lg btn-social-icon btn-linkedin" style="color:#152f52" href="https://www.linkedin.com/in/rk080299/"><i class="fa fa-linkedin fa-lg"></i></a>
+                            <a class="btn btn-lg btn-social-icon btn-facebook" href="https://www.facebook.com/renish.kumar.946"><i class="fa fa-facebook fa-lg"></i></a>
+                            <a class="btn btn-lg btn-social-icon btn-instagram" style="color:#912374" href="https://www.instagram.com/renish.kumar946/"><i class="fa fa-instagram fa-lg"></i></a>
                             <div class="at-user__title" style="font-size: 15px;">Team Manager</div>
                         </div>
                     </div>
                     <div class="at-column">
                         <div class="at-user">
-                            <div class="at-user__avatar" style="height: 145px; width: 145px;"><img src="img/teams/team19/krishanu.JPG"/></div>
-                            <div class="at-user__name" style="font-size: 22px;">Krishanu Kumar</div>
+                            <div class="at-user__avatar" style="height: 120px; width: 120px;"><img src="img/teams/team19/David Chaudhary.JPG"/></div>
+                            <div class="at-user__name" style="font-size: 22px;">David Chaudhary</div>
+                            <a class="btn btn-lg btn-social-icon btn-linkedin" style="color:#152f52" href="https://www.linkedin.com/in/david-chaudhary-2bb239130/"><i class="fa fa-linkedin fa-lg"></i></a>
+                            <a class="btn btn-lg btn-social-icon btn-facebook" href="https://www.facebook.com/david.chaudhary.7121"><i class="fa fa-facebook fa-lg"></i></a>
+                            <a class="btn btn-lg btn-social-icon btn-instagram" style="color:#912374" href="https://www.instagram.com/_bruce_bat_wayne_/"><i class="fa fa-instagram fa-lg"></i></a>
                             <div class="at-user__title" style="font-size: 15px;">Technical Director</div>
                             </div>
                         </div>
                         <div class="at-column">
                             <div class="at-user">
-                                <div class="at-user__avatar" style="height: 145px; width: 145px;"><img src="img/teams/team19/rahul.jpg"/></div>
-                                <div class="at-user__name" style="font-size: 22px;">Rahul R</div>
-                                <div class="at-user__title" style="font-size: 15px;">R&D Director</div>
-
-                            </div>
-                        </div>
-                        <div class="at-column">
-                            <div class="at-user">
-                                <div class="at-user__avatar" style="height: 145px; width: 145px;"><img src="img/teams/team19/gauravjit.jpg"/></div>
-                                <div class="at-user__name" style="font-size: 22px;">Gauravjit Singh GiLL</div>
+                                <div class="at-user__avatar" style="height: 120px; width: 120px;"><img src="img/teams/team19/Chaitanya Joshi.jpg"/></div>
+                                <div class="at-user__name" style="font-size: 22px;">Chaitanya Joshi</div>
+                                <a class="btn btn-lg btn-social-icon btn-linkedin" style="color:#152f52" href="https://www.linkedin.com/in/chaitanya-joshi-0283ba147/"><i class="fa fa-linkedin fa-lg"></i></a>
+                                <a class="btn btn-lg btn-social-icon btn-facebook" href="https://www.facebook.com/chaitanya.joshi.7771"><i class="fa fa-facebook fa-lg"></i></a>
+                                <a class="btn btn-lg btn-social-icon btn-instagram" style="color:#912374" href="https://www.instagram.com/mystery_brat/"><i class="fa fa-instagram fa-lg"></i></a>
                                 <div class="at-user__title" style="font-size: 15px;">Mechanical Lead</div>
 
                         </div>
                     </div>
                     <div class="at-column">
                         <div class="at-user">
-                            <div class="at-user__avatar" style="height: 145px; width: 145px;"><img src="img/teams/team19/lochan.png"/></div>
-                            <div class="at-user__name" style="font-size: 22px;">Lochan Rn</div>
+                            <div class="at-user__avatar" style="height: 120px; width: 120px;"><img src="img/teams/team19/Farhad Bharucha.png"/></div>
+                            <div class="at-user__name" style="font-size: 22px;">Farhad Bharucha</div>
+                            <a class="btn btn-lg btn-social-icon btn-linkedin" style="color:#152f52" href="https://www.linkedin.com/in/farhad-bharucha-b1bb03171/"><i class="fa fa-linkedin fa-lg"></i></a>
+                            <a class="btn btn-lg btn-social-icon btn-facebook" href="https://www.facebook.com/farhad.bharucha.5"><i class="fa fa-facebook fa-lg"></i></a>
                             <div class="at-user__title" style="font-size: 15px;">Coding Lead</div>
 
                         </div>
                     </div>
                     <div class="at-column">
                         <div class="at-user">
-                            <div class="at-user__avatar" style="height: 145px; width: 145px;"><img src="img/teams/team19/niket.JPG" style="border-radius: 50%; height: 100%; width: 100%;"/></div>
-                            <div class="at-user__name" style="font-size: 22px;">Niket Kumar</div>
-                            <div class="at-user__title" style="font-size: 15px;">Electronics Lead</div>
-
-                        </div>
-                    </div>
-                    <div class="at-column">
-                        <div class="at-user">
-                            <div class="at-user__avatar" style="height: 145px; width: 145px;"><img src="img/teams/team19/kriti.JPG" style="border-radius: 50%; height: 100%; width: 100%;"/></div>
-                            <div class="at-user__name" style="font-size: 22px;">Kriti Pratap</div>
-                            <div class="at-user__title" style="font-size: 15px;">Vision and Autonomous Lead</div>
-
-                        </div>
-                    </div>
-                    <div class="at-column">
-                        <div class="at-user">
-                            <div class="at-user__avatar" style="height: 145px; width: 145px;"><img src="img/teams/team19/Nikil.jpg"/></div>
-                            <div class="at-user__name" style="font-size: 22px;">Nikhil Datta</div>
-                            <div class="at-user__title" style="font-size: 15px;">Corporate Lead</div>
+                            <div class="at-user__avatar" style="height: 120px; width: 120px;"><img src="img/teams/team19/shri pic.jpg"/></div>
+                            <div class="at-user__name" style="font-size: 22px;">Shri Venkatesh</div>
+                            <a class="btn btn-lg btn-social-icon btn-linkedin" style="color:#152f52" href="https://www.linkedin.com/in/shri-venkatesh-subramani-b5713a154/"><i class="fa fa-linkedin fa-lg"></i></a>
+                            <a class="btn btn-lg btn-social-icon btn-facebook" href="https://www.facebook.com/shrivenkatesh.subramani"><i class="fa fa-facebook fa-lg"></i></a>
+                            <a class="btn btn-lg btn-social-icon btn-instagram" style="color:#912374" href="https://www.instagram.com/_shriiiiiii_/"><i class="fa fa-instagram fa-lg"></i></a>
+                            <div class="at-user__title" style="font-size: 15px;">Science Lead</div>
 
                         </div>
                     </div>
@@ -552,21 +576,32 @@
             <br><br><br><br><br><br>
             <div class="margin1">
             </div>
-            <section class="about panel-bg-shadow">
-                <h1 id="sponsorship" class="heading" style="color: #000;">Sponsorship</h1>
-                <p style="font-family: Raleway; font-size: 23px; color: #8F3985; margin-top: 0px;">We are a non-profit student run technical organization. We rely completely on our sponsors and college funds. Your step towards sponsoring our team can stride a dream of Mars Mission further, through our participation in URC’18.</p>
+            <section class="about panel-bg-shadow" style="background-color: #616366;">
+                <h1 id="sponsorship" class="heading" style="color: #fff;">Sponsorship</h1>
+                <p style="font-family: Raleway; font-size: 23px; color: #ffffff; margin-top: 0px;">We are a non-profit student run technical organization. We rely completely on our sponsors and college funds. Your step towards sponsoring our team can stride a dream of Mars Mission further, through our participation in URC’19.</p>
                 <div class="spons" align="center">
-                    <a href="http://www.solidworks.com/" target="_blank"><img src="./img/sponsors/solidworks.png" width="350" height="72"></a>
-                    <br>
-                    <a href="https://www.3ding.in/" target="_blank"><img src="./img/sponsors/3ding.png" width="170" height="170" style="margin-top: 50px;"></a>
+                    <a href="https://www.nvidia.com/en-in/" target="_blank"><img src="./img/sponsors/Nvidia_logo.svg" width="350" height="350"></a>
+                    <a href="" target="_blank" style="padding-left: 30px"><img  src="./img/sponsors/divvela.jpg" width="500" height="170" style="margin-top: 50px;"></a>
                 </div>
                 <br><br><br>
-                <a href="sponsors.html" class="team-button-link"><button id="js-trigger-overlay" class="team-button2" type="button">Our Sponsors ?</button></a>
+                <a href="sponsors.html" class="team-button-link"><button id="js-trigger-overlay" class="team-button2" type="button">Our Sponsors</button></a>
                 <br>
             </section>
-            <br>
-
+  
+            <section id="recruit">
             <h1 id="sponsorship" class="heading" style="color: #fff;" align="center">Updates</h1><br>
+            <div>
+              <a style="display: block;
+  margin-left: auto;
+  margin-right: auto;
+width:20%" href="https://docs.google.com/forms/d/e/1FAIpQLSejX2outl0QdosUn7t3cAclLmncJhq0WP9XZxrU7n6Nb88HBw/viewform" target="_blank" style=""><img  src="./img/sponsors/recruit.jpeg" width="200" height="300" style="margin-top: 50px;">
+</a>
+<a style="margin-left: 450px; color:#20bd54" href="https://docs.google.com/forms/d/e/1FAIpQLSejX2outl0QdosUn7t3cAclLmncJhq0WP9XZxrU7n6Nb88HBw/viewform">Click on this to get to google form</a>
+              
+              <h1 id="sponsorship" class="heading" style="color: #fff; margin-left: 450px;">Recruitment Is Live</h1>
+
+            </div>
+            </section>
             <script>
                 (function(d, s, id) {
                   var js, fjs = d.getElementsByTagName(s)[0];
@@ -588,7 +623,8 @@
                     >
                 </div>
             </div>
-            <section class="contact">
+            
+            <section class="contact" style="background-color: #616366">
                 <h1 id="contact" class="heading" style="color: #000;">Contact Us</h1>
                 <div class="row">
                     <div class="col-4 contact-items">
@@ -599,7 +635,7 @@
                     <div class="col-4 contact-items">
                         <i class="fa fa-phone fa-3x" aria-hidden="true" style="color: #000;"></i>
                         <br>
-                        <span style="color: #000;">798-400-4108 , 857-086-1686</span>
+                        <span style="color: #000;">896-087-0550 , 917-626-1226</span>
                     </div>
                     <div class="col-4 contact-items">
                         <i class="fa fa-envelope fa-3x" aria-hidden="true" style="color: #000;"></i>
@@ -632,7 +668,7 @@
                     			</div>
 
                     			<div>
-                    		      	<input type="submit" value="Send Message">
+                    		      	<input style="background-color: #20bd54" type="submit" value="Send Message">
                     		    </div>
                     		</fieldset>
                     	</form>
@@ -644,9 +680,13 @@
                             <a href="https://www.facebook.com/rudraindiaURC/" target="_blank" class="facebook"> <i class="fa fa-facebook"></i></a>
                         </li>
                         <li><a href="https://www.youtube.com/channel/UC2Lu4ABOxd43mizJGFATF_w" target="_blank"  class="google-plus"><i class="fa fa-youtube"></i></a></li>
-                        <li><a href="https://www.linkedin.com/company-beta/13210958/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/rudra-marsrover/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        <li>
+        <a href="https://www.instagram.com/team_rudra/" target="_blank" class="instagram"> <i class="fa fa-instagram"></i></a>
+    </li>
                     </ul>
                 </div>
+              </div>  
             </section>
 
             <ul class="social-nav model-0" style="position: fixed;">
@@ -654,12 +694,15 @@
         <a href="https://www.facebook.com/rudraindiaURC/" target="_blank" class="facebook"> <i class="fa fa-facebook"></i></a>
     </li>
     <li><a href="https://www.youtube.com/channel/UC2Lu4ABOxd43mizJGFATF_w" target="_blank" class="google-plus"><i class="fa fa-youtube"></i></a></li>
-    <li><a href="https://www.linkedin.com/company-beta/13210958/" target="_blank"  class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+    <li><a href="https://www.linkedin.com/company/rudra-marsrover/" target="_blank"  class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+    <li>
+        <a href="https://www.instagram.com/team_rudra/" target="_blank" class="instagram"> <i class="fa fa-instagram"></i></a>
+    </li>
 </ul>
             <footer>
     <div class="row">
         <div class="col-4 legal">
-            <span>&copy;2018</span>
+            <span>&copy;2019</span>
         </div>
         <div class="col-4">
 
