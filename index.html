@@ -301,6 +301,23 @@
                 .margin4{
                     margin-top: 120px;
                 }
+                .img-responsive{
+                    height:100px;
+                    width:355px;
+                    padding-left:7px;
+                }
+                .sponsor-resp{
+                  height:100px;
+                  width:200px;
+                }
+                .button5resp{
+                  height:20px;
+                  width:350px;
+                }
+                .recruitresp{
+                    margin-left: 70px;
+                }
+                
             }
 
             @media only screen and (min-width: 600px) {
@@ -316,7 +333,21 @@
                 .team-container{
                     margin-left: 2.0%;
                 }
+                .img-responsive{
+                    margin-left: 200px;
+                }
+                .button5resp{
+                  margin-left: 200px;
+                  height:50px;
+                  width:890px;
+                }
+                .recruitresp{
+                    margin-left: 500px;
+                }
+
             }
+            /* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
 
             div .at-user__name
             {
@@ -384,13 +415,11 @@
             </div>
             
             <br>
-            <a href="http://urc.marssociety.org/" class="team-button-link"><button id="js-trigger-overlay" class="team-button1" type="button">Click below image to visit URC website</button></a>
-            <div class="item">
-              <a href="http://urc.marssociety.org/" target="_blank"><img href="http://urc.marssociety.org/" src="img/urc.png" style="display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;"></a>
-            </div>
+            <a href="http://urc.marssociety.org/" class="team-button-link"><button id="js-trigger-overlay" class="team-button5 button5resp" type="button">Click below image to visit URC website</button></a>
+               <div> 
+                  <a href="http://urc.marssociety.org/" target="_blank">
+                      <img class="img-responsive" href="http://urc.marssociety.org/" src="img/urc.png"></a>
+                </div>
             <br>
 
             <section class="timeline">
@@ -580,8 +609,8 @@
                 <h1 id="sponsorship" class="heading" style="color: #fff;">Sponsorship</h1>
                 <p style="font-family: Raleway; font-size: 23px; color: #ffffff; margin-top: 0px;">We are a non-profit student run technical organization. We rely completely on our sponsors and college funds. Your step towards sponsoring our team can stride a dream of Mars Mission further, through our participation in URC’19.</p>
                 <div class="spons" align="center">
-                    <a href="https://www.nvidia.com/en-in/" target="_blank"><img src="./img/sponsors/Nvidia_logo.svg" width="350" height="350"></a>
-                    <a href="" target="_blank" style="padding-left: 30px"><img  src="./img/sponsors/divvela.jpg" width="500" height="170" style="margin-top: 50px;"></a>
+                    <a href="https://www.nvidia.com/en-in/" target="_blank"><img class="sponsor-resp" src="./img/sponsors/Nvidia_logo.svg" width="350" height="350"></a>
+                    <a href="" target="_blank" style="padding-left: 30px"><img class="sponsor-resp" src="./img/sponsors/divvela.jpg" width="500" height="170" style="margin-top: 50px;"></a>
                 </div>
                 <br><br><br>
                 <a href="sponsors.html" class="team-button-link"><button id="js-trigger-overlay" class="team-button2" type="button">Our Sponsors</button></a>
@@ -591,10 +620,7 @@
             <section id="recruit">
             <h1 id="sponsorship" class="heading" style="color: #fff;" align="center">Updates</h1><br>
             <div>
-              <a style="display: block;
-  margin-left: auto;
-  margin-right: auto;
-width:20%" href="https://docs.google.com/forms/d/e/1FAIpQLSejX2outl0QdosUn7t3cAclLmncJhq0WP9XZxrU7n6Nb88HBw/viewform" target="_blank" style=""><img  src="./img/sponsors/recruit.jpeg" width="200" height="300" style="margin-top: 50px;">
+              <a style="display: block;" href="https://docs.google.com/forms/d/e/1FAIpQLSejX2outl0QdosUn7t3cAclLmncJhq0WP9XZxrU7n6Nb88HBw/viewform" target="_blank" style=""><img class="recruitresp" src="./img/sponsors/recruit.jpeg" width="200" height="300" style="margin-top: 10px;">
 </a>
 <a style="margin-left: 450px; color:#20bd54" href="https://docs.google.com/forms/d/e/1FAIpQLSejX2outl0QdosUn7t3cAclLmncJhq0WP9XZxrU7n6Nb88HBw/viewform">Click on this to get to google form</a>
               
