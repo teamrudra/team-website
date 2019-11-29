@@ -79,10 +79,10 @@
 }
 /* fade */
 .owl-fade-out {
-  z-index: 10;
+  /*z-index: 10;
   -webkit-animation: fadeOut .7s both ease;
   -moz-animation: fadeOut .7s both ease;
-  animation: fadeOut .7s both ease;
+  animation: fadeOut .7s both ease;*/
 }
 .owl-fade-in {
   -webkit-animation: empty 1ms both ease;

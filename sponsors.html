@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/nav.css">
         <link rel="stylesheet" href="css/social.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/scroll.css">
         <link href="./css/owl.carousel.css" rel="stylesheet">
         <link href="./css/owl.theme.css" rel="stylesheet">
 
@@ -41,6 +42,36 @@
                       margin-top: 60px;
                   }
               }
+              .header-down-arrow {
+                  position: absolute;
+                    top: 20vh;
+                    left: 0;
+                    right: 0;
+                  text-align: center;
+                  z-index: 10;
+                }
+               @keyframes pulse {
+                  0% {
+                    opacity: 1;
+                    transform: none;
+                  }
+                  50% {
+                    opacity: .8;
+                    transform: scale(.8);
+                  }
+                  100% {
+                    opacity: 1;
+                    transform: none;
+                  }
+                }
+
+                .header-down-arrow img {
+                    animation: fade-slide-up 1s 1s ease-out forwards,
+                    pulse 2s 3s ease-out infinite;
+                    opacity: 0;
+                }
+
+ 
 
         </style>
 
@@ -82,25 +113,40 @@
 
         <main class="cd-main-content">
             <br>
-            <div class="heading" align="center">Our Sponsors</div>
-            <br>
-            <div id="owl-demo" align="center">
-                <div class="item"><a href="https://wheeleez.com/" target="_blank"><img src="./img/sponsors/wheeleez.webp" alt="" style="width: 200px; height: 200px; margin-top: 30px;"></a></div>
-                <div class="item"><a href="" target="_blank"><img src="./img/sponsors/divvela.webp" alt="" style="width: 250px; height: 70px; margin-top: 100px;"></a></div>
-              <div class="item"><a href="https://www.nvidia.com/en-in/" target="_blank"><img src="./img/sponsors/Nvidia_logo.webp" alt="" style="width: 250px; height: 184.4464971px; margin-top: 20px;"></a></div>
-              <div class="item"><a href="https://www.solidworks.com/" target="_blank"><img src="./img/sponsors/solidworks.webp" alt="" style="width: 200px; height: 50px; margin-top: 80px;"></a></div>
-              <div class="item"><a href="https://www.sparkfun.com/" target="_blank"><img src="./img/sponsors/sparkfun.webp" alt="" style="width: 250px; height: 156.25px; margin-top: 20px;"></a></div>
-              <div class="item"><a href="https://www.protocase.com/" target="_blank"><img src="./img/sponsors/protocase.webp" alt="" style="width: 250px; height: 187.2586872px; margin-top: 20px;"></a></div>
-              <div class="item"><a href="https://www.altium.com/" target="_blank"><img src="./img/sponsors/Altium.webp" alt="" style="width: 250px; height: 62.5px; margin-top:80px"></a></div>
-              <div class="item"><a href="http://www.mscsoftware.com/" target="_blank"><img src="./img/sponsors/msc.webp" alt="" style="width: 250px; height: 98.42600163px; margin-top: 60px;"></a></div>
-              <div class="item"><a href="https://www.ansys.com/" target="_blank"><img src="./img/sponsors/ansys.webp" alt="" style="width: 250px; height: 71.25px; margin-top: 75px;"></a></div>
-            </div>
-            <br><br>
             <div class="sponsors" align="center">
+                <a href="#spons"><section class="header-down-arrow">
+                    <img src="img/scroll-down.png" width="50">
+                    </section>
+                </a>
                 <div class="heading" align="center">Why Rudra?</div>
                 <p style="color: #fff; font-family: Raleway; font-size: 25px;">We present our sponsors at SRM IST’s Events we participate, as well as campus held events where we showcase our rover. We also promote our Sponsors on our promotional Materials like Website, online, T-shirts etc.</p>
                 <p style="color: #fff; font-family: Raleway; font-size: 25px;">Sponsoring us, you can actually connect with our team of creative individuals of different branches like Mechanical, Electronics, Mechatronics, Computer science, Bio-tech etc. working passionately in their respective domains. You can also meet or contact our team members to discuss and also recruit them for any future projects that we are concerned with.</p>
             </div>
+            <br><br>
+            <section id="spons">
+                <div class="heading" align="center">Our Sponsors</div>
+                <br>
+                <div class="row">
+                    <div class="col-md-4"><a href="https://wheeleez.com/" target="_blank"><img src="./img/sponsors/wheeleez.webp" alt="" style="max-width: 100%; height:220px"></a></div>
+                    <div class="col-md-4"><a href="" target="_blank"><img src="./img/sponsors/divvela.webp" alt="" style="max-width: 100%; height:130px"></a></div>
+                    <div class="col-md-4"><a href="https://www.solidworks.com/" target="_blank"><img src="./img/sponsors/solidworks.webp" alt="" style="max-width: 100%; height: 110px;"></a></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4"><a href="https://www.sparkfun.com/" target="_blank"><img src="./img/sponsors/sparkfun.webp" alt="" style="max-width: 100%; height: 250px;"></a></div>
+                    <div class="col-s-4 col-md-4"><a href="https://www.nvidia.com/en-in/" target="_blank"><img src="./img/sponsors/Nvidia_logo.webp" alt="" style="width: 100%; height:250px"></a></div>    
+                  <div class="col-md-4"><a href="https://www.protocase.com/" target="_blank"><img src="./img/sponsors/protocase.webp" alt="" style="width: 100%; height: 250px;"></a></div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4"><a href="https://www.altium.com/" target="_blank"><img src="./img/sponsors/Altium.webp" alt="" style="width: 100%; height: 100px"></a></div>
+                  <div class="col-md-4"><a href="http://www.mscsoftware.com/" target="_blank"><img src="./img/sponsors/msc.webp" alt="" style="width: 100%; height: 130px"></a></div>
+                  <div class="col-md-4"><a href="https://www.ansys.com/" target="_blank"><img src="./img/sponsors/ansys.webp" alt="" style="width: 100%; height: 90px"></a></div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4"><a href="https://www.valispace.com/" target="_blank"><img src="./img/sponsors/Valispace.webp" alt="" style="width: 100%; height: 100px"></a></div>
+                  <div class="col-md-4"><a href="https://www.sukritinfotech.com/" target="_blank"><img src="./img/sponsors/sukrit.webp" alt="" style="width: 100%; height: 130px"></a></div>
+                  <div class="col-md-4"><a href="http://omgvhelectronics.com/" target="_blank"><img src="./img/sponsors/omgvh.webp" alt="" style="width: 100%; height: 90px"></a></div>
+                </div>
+            </section>
         </main>
     </body>
 
@@ -119,11 +165,7 @@
         <div class="col-4 legal">
             <span>&copy;2019</span>
         </div>
-        <div class="col-4">
-            
-        </div>
-        <div class="col-4 webarch-logo">
-            <a href="https://webarchsrm.com/"><img src="img/weblogo.png" alt=""></a>
+        <div class="col-4">           
         </div>
 </footer>
 
@@ -147,6 +189,21 @@
         });
 
         });
-    </script>
+
+        $(document).ready(function(){
+        $('a[href^="#spons"]').on('click',function (e) {
+            e.preventDefault();
+
+            var target = this.hash;
+            var $target = $(target);
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 900, 'swing', function () {
+                window.location.hash = target;
+            });
+        });
+        });
+    </script>   
 
 </html>
