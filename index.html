@@ -419,6 +419,13 @@
             }*/
 
         </style>
+
+        <div id="loader-wrapper">
+          <div id="loader"></div>
+          <div class="loader-section section-left"></div>
+          <div class="loader-section section-right"></div>
+        </div>
+
         <header class="cd-auto-hide-header">
             <div class="logo"><a class="brand" href="index.html">rudra</a></div>
 
@@ -450,7 +457,6 @@
                   
           <div class="centered">
              <h1 class="team-name title1">SRM Team Rudra</h1>
-             
           </div>
                 
       </div>
@@ -874,6 +880,17 @@
     <script src="js/contact-form.js" charset="utf-8"></script>
 
     <script type="text/javascript">
+
+      $(document).ready(function() {
+      
+      setTimeout(function(){
+          $('body').addClass('loaded');
+          // $('h1').css('color','#222222');
+      }, 3000);
+
+      });
+
+
     $(document).ready(function(){
     	$('a[href^="#home"]').on('click',function (e) {
     	    e.preventDefault();
