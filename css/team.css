@@ -83,6 +83,13 @@
   -ms-flex-preferred-size: 11.11111%;
       flex-basis: 11.11111%;
 }
+.at-grid[data-column="10"] .at-column {
+  width: 10%;
+  max-width: 10%;
+  min-width: 10%;
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+}
 .at-column {
   z-index: 0;
   position: relative;

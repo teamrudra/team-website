@@ -54,6 +54,11 @@
 
     </head>
     <body>
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
 <div style="background-color: #">       
         <link href='https://fonts.googleapis.com/css?family=Rajdhani' rel='stylesheet'>
 <style media="screen">
@@ -152,6 +157,15 @@
                                 <li>
                                     <a class="ns-img" href="img/gallery/18.webp"></a>
                                 </li>
+                                <li>
+                                    <a class="ns-img" href="img/gallery/19.webp"></a>
+                                </li>
+                                <li>
+                                    <a class="ns-img" href="img/gallery/20.webp"></a>
+                                </li>
+                                <li>
+                                    <a class="ns-img" href="img/gallery/21.webp"></a>
+                                </li>
                             </ul>
                             <div id="fsBtn" class="fs-icon" title="Expand/Close"></div>
                         </div>
@@ -225,10 +239,18 @@
                         
                         <div class="grid-item">
                             <img src = "img/gallery/17.webp" onclick="lightbox(16)" class="img">
-                        </div>
-                        
+                        </div> 
                         <div class="grid-item">
                             <img src = "img/gallery/18.webp" onclick="lightbox(17)" class="img">
+                        </div>
+                        <div class="grid-item">
+                            <img src = "img/gallery/19.webp" onclick="lightbox(18)" class="img" style="height: 371.083px">
+                        </div>
+                        <div class="grid-item">
+                            <img src = "img/gallery/20.webp" onclick="lightbox(19)" class="img" style="position: absolute; top: 2480px; height:371.083px; width:553.983px">
+                        </div>
+                        <div class="grid-item">
+                            <img src = "img/gallery/21.webp" onclick="lightbox(20)" class="img" style="position: absolute; top: 2480px; height:371.083px; width:553.983px; left: 673px">
                         </div>
                   	</div>
                 </div>
@@ -259,6 +281,9 @@
 </div>
     <!-- <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script> -->
     <script type="text/javascript">
+        setTimeout(function(){
+            $('body').addClass('loaded');
+        }, 1000);
     // GENERAL SETTING
     window.sr = ScrollReveal({ reset: true });
 
