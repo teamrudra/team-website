@@ -1,0 +1,36 @@
+.model-6 li {
+  float: left;
+}
+.model-6 a:hover {
+  background: #fff;
+}
+.model-6 .twitter {
+  background: #00ACED;
+}
+.model-6 .twitter:hover {
+  color: #00ACED;
+}
+.model-6 .facebook {
+  background: #3B579D;
+}
+.model-6 .facebook:hover {
+  color: #3B579D;
+}
+.model-6 .google-plus {
+  background: #DD4A3A;
+}
+.model-6 .google-plus:hover {
+  color: #DD4A3A;
+}
+.model-6 .linkedin {
+  background: #007BB6;
+}
+.model-6 .linkedin:hover {
+  color: #007BB6;
+}
+.model-6 .pinterest {
+  background: #CB2026;
+}
+.model-6 .pinterest:hover {
+  color: #CB2026;
+}
