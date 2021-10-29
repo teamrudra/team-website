@@ -103,7 +103,6 @@ const useStyles = makeStyles({
   "@media (min-width: 800px)": {
     container: {
       height: "120vh",
-      marginBottom: "20vh"
     },
     title: {
       fontSize: "6vw",
@@ -414,6 +413,16 @@ export default function FullWidthGrid() {
       <div className={classes.container}>
         <div className={classes.title}>Team</div>
         {renderMain()}
+        <Link
+          className={classes.downvote}
+          to="social"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={1000}
+        >
+          <Arrowd id="pral" className={classes.arrow} />
+        </Link>
       </div>
     </Parallax>
   );
