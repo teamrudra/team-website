@@ -231,7 +231,7 @@ export default function SectionPatreon(props) {
           <h1
             style={{ fontWeight: "bold", fontSize: "12vh", paddingTop: "5vh" }}
           >
-            YOU CAN CONTACT US AT
+            CONTACT US AT
           </h1>
         </div>
         <div className={classes.address}>
@@ -248,7 +248,7 @@ export default function SectionPatreon(props) {
             <img className={classes.homeIcon} src={Phone} />
           </div>
           <div className={classes.homeText}>
-            +91 84518 92778, +91 70045 32797
+            +91-7781996283, +91-9521887134
           </div>
         </div>
         <div className={classes.email}>
