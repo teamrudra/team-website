@@ -248,7 +248,7 @@ export default function SectionPatreon(props) {
             <img className={classes.homeIcon} src={Phone} />
           </div>
           <div className={classes.homeText}>
-            +91-7781996283, +91-9521887134
+            +91 7781996283, +91 9521887134
           </div>
         </div>
         <div className={classes.email}>
