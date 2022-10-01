@@ -375,7 +375,7 @@ export default function SectionPatreon(props) {
         </div>
         <br />
         <PhoneIcon className={classes.icon} />
-        <div className={classes.Text}>+91 84518 92778, +91 70045 32797</div>
+        <div className={classes.Text}>+91 7781996283, +91 9521887134</div>
         <br />
         <EmailIcon className={classes.icon} />
         <div className={classes.Text}>srmmarsroverteam@gmail.com</div>
