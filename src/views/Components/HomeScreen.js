@@ -186,7 +186,7 @@ export default function Homepage(props) {
   const classes = useStyles();
   const { ...rest } = props;
 
-  useEffect(() => {
+/*  useEffect(() => {
     setTimeout(function () {
       document.getElementById('load1').style.transform = 'translate(-50vw, 0)';
       document.getElementById('load2').style.transform = 'translate(0, -120vh)';
@@ -197,7 +197,7 @@ export default function Homepage(props) {
     setTimeout(function () {
       document.getElementById('mainbrand').style.marginTop = '5vh';
     }, 4000);
-  });
+  }); */
 
   return (
     <div>
